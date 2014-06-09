@@ -1,0 +1,18 @@
+containers:
+  root: /lxc/ganeti-qa-sandbox # containers will be created under here
+  network:
+    bridge: br0 # host bridge interface used by containers
+nodes:
+  # name of the nodes will be automatically decided
+  - type: master
+    address:
+      primary: 192.168.189.106
+      secondary: 192.168.189.107
+  - type: master
+    address:
+      primary: 192.168.189.108
+      secondary: 192.168.189.109
+  - type: master
+    address:
+      primary: 192.168.189.110
+      secondary: 192.168.189.111
